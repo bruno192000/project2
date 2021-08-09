@@ -1,24 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Log in</title>
-    <a href="style.css" type="stylesheet"></a>
-    <script></script>
-</head>
-<body>
-    
-    <p>Log in to your account</p>
-        <input type="text">E-mail</input>
-        <input type="text">Password</input>
-        <button>Submit</button>
-    
-    <p>Sign up</p>
-    <input type="text">Username</input>
-    <input type="text">E-mail</input>
-    <input type="text">Password</input>
-    <button>Submit</button>
-</body>
-</html>
+{{!-- This is the {{body}} homepage that appears after users successfully log in --}}
+  <h1>Recent Posts</h1>
+  <div class="container-md">
+    <div class="row">
+      <div class="col">
+          {{#each blogs as |blog| }}
+
+          <div class="card" style="width: 80%;">
+            <div class="card-body">
+              <h2 class="card-title text-primary">{{blog.title}}</h2>
+              <h6 class="fst-italic">by {{user.username}} on {{blog.date}}</h6>
+              <p class="card-text text-dark">{{blog.content}}</p>
+              <hr>
+              {{#each blog.comments}}
+              <h6 class="fst-italic">Comment by user #{{this.user_id}} on {{this.date}}:</h6>
+              {{this.comment_text}}
+              <hr>
+              {{/each}}
+
+              <a href="/postpage/{{blog.id}}" class="btn btn-primary">Read</a>
+            </div>
+          </div>
+          {{/each}}
+      </div>
+
+        <div class="col">
+          <div>
+          <h1>Live chat!</h1>
+          </div>
+
+      
+        <div >
+          <h1>Translator!</h1>
+          </div>
+
+
+      </div>
+
+    </div>
+  </div>
+
