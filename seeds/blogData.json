@@ -1,98 +1,98 @@
 [
   {
     "date": "01/01/21",
-    "title": "Blog Post 1",
-    "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste mollitia error repudiandae voluptates non ipsam! Odio, cupiditate? Nemo sint, enim dolorum harum repellat, deserunt nam, quia iure provident molestiae corrupti!",
+    "title": "English In The House",
+    "content": "Do you want to get better at learning English?! Well, to achieve this goal, you'll have to learn new words and practice using them with those around you. If you can't find anyone to practice around you, all you need to do is to log on to 'GET BILINGUAL' and find a pal to chat with you. Have fun, and keep learning!",
     "username_id": "1"
   },
 
   {    
     "date": "01/02/21",
-    "title": "Blog Post 2",
-    "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste mollitia error repudiandae voluptates non ipsam! Odio, cupiditate? Nemo sint, enim dolorum harum repellat, deserunt nam, quia iure provident molestiae corrupti!",
+    "title": "OÙ SON LES FRANCOPHONES? (French)",
+    "content": "Parlez vous Français?! Nous les francophones sommes ici pour vous aider.",
     "username_id": "2"
 
   },
 
   {    
     "date": "01/03/21",
-    "title": "Blog Post 3",
-    "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste mollitia error repudiandae voluptates non ipsam! Odio, cupiditate? Nemo sint, enim dolorum harum repellat, deserunt nam, quia iure provident molestiae corrupti!",
+    "title": "Guten Tag! (German)",
+    "content": "Du bist sehr wilkommen hier meine freunde....",
     "username_id": "5"
   },
 
   {
     "date": "01/04/21",
-    "title": "Blog Post 4",
-    "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste mollitia error repudiandae voluptates non ipsam! Odio, cupiditate? Nemo sint, enim dolorum harum repellat, deserunt nam, quia iure provident molestiae corrupti!",
+    "title": "Holla Amiga (Spanish)",
+    "content": "Quieres aprender todos los idiomas del mundo? Este es el lugar para ir ...!",
     "username_id": "1"
   },
 
   {
     "date": "01/05/21",
-    "title": "Blog Post 5",
-    "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste mollitia error repudiandae voluptates non ipsam! Odio, cupiditate? Nemo sint, enim dolorum harum repellat, deserunt nam, quia iure provident molestiae corrupti!",
+    "title": "De Lisboa com amor ... (Portuguese)",
+    "content": "Oi pessoal! Estou aqui para me divertir aprendendo idiomas e fazer novos amigos.",
     "username_id": "1"
   },
 
   {
     "date": "01/08/21",
-    "title": "Blog Post 7",
-    "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste mollitia error repudiandae voluptates non ipsam! Odio, cupiditate? Nemo sint, enim dolorum harum repellat, deserunt nam, quia iure provident molestiae corrupti!",
+    "title": "Hakuna matata! (Swahili)",
+    "content": "Habari wananchi wa ulimwengu! Je! Kuna mtu tayari kwa kiswahili zaidi?",
     "username_id": "2"
   },
   {
     "date": "01/08/21",
-    "title": "Blog Post 8",
-    "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste mollitia error repudiandae voluptates non ipsam! Odio, cupiditate? Nemo sint, enim dolorum harum repellat, deserunt nam, quia iure provident molestiae corrupti!",
+    "title": "Ni Hao! (Chinese)",
+    "content": "世界公民你好！ 有人准备好再来点中文了吗？ --Shìjiè gōngmín nǐ hǎo! Yǒurén zhǔnbèi hǎo zàilái diǎn zhōngwénle ma?",
     "username_id": "2"
   },
   {
     "date": "01/08/21",
-    "title": "Blog Post 9",
-    "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste mollitia error repudiandae voluptates non ipsam! Odio, cupiditate? Nemo sint, enim dolorum harum repellat, deserunt nam, quia iure provident molestiae corrupti!",
+    "title": "earabiun faqat! (Arabic)",
+    "content": "مرحبا مواطني العالم! هل هناك من هو مستعد لمزيد من العربية؟ --Marhaban muatini alealami! hal hunak man hu mustaeidun limazid min alearabiati?",
     "username_id": "3"
   },
   {
     "date": "01/08/21",
-    "title": "Blog Post 10",
-    "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste mollitia error repudiandae voluptates non ipsam! Odio, cupiditate? Nemo sint, enim dolorum harum repellat, deserunt nam, quia iure provident molestiae corrupti!",
+    "title": "Sussurri da Venezia...(Italian)",
+    "content": "Ciao cittadini del mondo! Qualcuno è pronto per un po' di italiano in più?!",
     "username_id": "3"
   },
   {
     "date": "01/08/21",
-    "title": "Blog Post 11",
-    "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste mollitia error repudiandae voluptates non ipsam! Odio, cupiditate? Nemo sint, enim dolorum harum repellat, deserunt nam, quia iure provident molestiae corrupti!",
+    "title": "Hallo liewe mense (Afrikaans)",
+    "content": " Hoe gaan dit met almal? Laat ons saamstaan en probleme oplos. ",
     "username_id": "4"
   },
   {
     "date": "01/08/21",
-    "title": "Blog Post 12",
-    "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste mollitia error repudiandae voluptates non ipsam! Odio, cupiditate? Nemo sint, enim dolorum harum repellat, deserunt nam, quia iure provident molestiae corrupti!",
+    "title": "こんにちは素敵な人 --Kon'nichiwa sutekinahito (Japanese)",
+    "content": "気軽に新しい人と出会い、新しい言語を学びましょう。 --Kigaru ni atarashī hito to deai, atarashī gengo o manabimashou.",
     "username_id": "4"
   },
   {
     "date": "01/08/21",
-    "title": "Blog Post 13",
-    "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste mollitia error repudiandae voluptates non ipsam! Odio, cupiditate? Nemo sint, enim dolorum harum repellat, deserunt nam, quia iure provident molestiae corrupti!",
+    "title": "Москва в изобилии (Russian)",
+    "content": "Ne stesnyaytes' znakomit'sya s novymi lyud'mi i izuchat' novyy yazyk.",
     "username_id": "5"
   },
   {
     "date": "01/08/21",
-    "title": "Blog Post 14",
-    "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste mollitia error repudiandae voluptates non ipsam! Odio, cupiditate? Nemo sint, enim dolorum harum repellat, deserunt nam, quia iure provident molestiae corrupti!",
+    "title": "Ẹ kí lati Eko (Yoruba)" ,
+    "content": "Forukọsilẹ, pade eniyan, ki o kọ ẹkọ ohun tuntun.",
     "username_id": "5"
   },
   {
     "date": "01/08/21",
-    "title": "Blog Post 15",
-    "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste mollitia error repudiandae voluptates non ipsam! Odio, cupiditate? Nemo sint, enim dolorum harum repellat, deserunt nam, quia iure provident molestiae corrupti!",
+    "title": "Sannu Mutanen Kirki (Hausa)",
+    "content": "Yi rajista, sadu da mutane, kuma koya sabon abu.",
     "username_id": "6"
   },
   {
     "date": "01/08/21",
-    "title": "Blog Post 16",
-    "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste mollitia error repudiandae voluptates non ipsam! Odio, cupiditate? Nemo sint, enim dolorum harum repellat, deserunt nam, quia iure provident molestiae corrupti!",
+    "title": "नमस्ते सुंदर लोगों (namaste sundar logon - Hindi)",
+    "content": " Ham yahaan nae logon se milane aur naee bhaashaen seekhane ke lie hain.",
     "username_id": "6"
   }
 ]

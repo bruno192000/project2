@@ -1,41 +1,51 @@
 {{!-- This is the {{body}} homepage that appears after users successfully log in --}}
-  <h1>Recent Posts</h1>
-  <div class="container-md">
-    <div class="row">
-      <div class="col">
-          {{#each blogs as |blog| }}
+    <h1>Recent Posts</h1>
+    <div class="container-md">
+      <div class="row">
+        <div class="col">
+            {{#each blogs as |blog| }}
 
-          <div class="card" style="width: 80%;">
-            <div class="card-body">
-              <h2 class="card-title text-success">{{blog.title}}</h2>
-              <h6 class="fst-italic">by {{user.username}} on {{blog.date}}</h6>
-              <p class="card-text text-dark">{{blog.content}}</p>
-              <hr>
-              {{#each blog.comments}}
-              <h6 class="fst-italic">Comment</h6>
-              {{this.comment_text}}
-              <hr>
-              {{/each}}
+            <div class="card" style="width: 80%;">
+              <div class="card-body">
+                <h2 class="card-title text-success">{{blog.title}}</h2>
+                <h6 class="fst-italic">by {{user.username}} on {{blog.date}}</h6>
+                <p class="card-text text-dark">{{blog.content}}</p>
+                <hr>
+                {{#each blog.comments}}
+                <h6 class="fst-italic">Comment</h6>
+                {{this.comment_text}}
+                <hr>
+                {{/each}}
 
-              <a href="/postpage/{{blog.id}}" class="btn btn-success">Read</a>
+                <a href="/postpage/{{blog.id}}" class="btn btn-success">Read</a>
+              </div>
+            </div>
+            {{/each}}
+        </div>
+
+          <div class="col">
+            <div>
+            <h1>Live chat!</h1>
+            </div>
+
+        
+          <div >
+            <h1>Translator!</h1>
+            </div>
+
+
+        </div>
+
+         <div class="col">
+
+           <h1>Chat with friends on zoom</h1>
+
+            <div class="icon" style="width: 20px;">
+            
+            <a href="https://zoom.us/" target="_blank" rel="noopener noreferrer"><img src="https://www.eweek.com/wp-content/uploads/2021/01/Zoom.logo_.jpg" width="100px" height="80px"></a>
             </div>
           </div>
-          {{/each}}
-      </div>
-
-        <div class="col">
-          <div>
-          <h1>Live chat!</h1>
-          </div>
-
-      
-        <div >
-          <h1>Translator!</h1>
-          </div>
-
 
       </div>
-
     </div>
-  </div>
 
