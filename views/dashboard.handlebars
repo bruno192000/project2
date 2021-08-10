@@ -1,11 +1,11 @@
 {{!-- This is the {{body}} homepage that appears after users successfully log in --}}
 <h1>Dashboard</h1>
-<a href="/newpostview" class="btn btn-primary p-2 m-2" style="width: 80%">Click Here to Create New Post</a>
+<a href="/newpostview" class="btn btn-success p-2 m-2" style="width: 80%">Click Here to Create New Post</a>
 
 {{#each blogs as |blog| }}
 <div class="card" style="width: 80%;">
   <div class="card-body">
-    <h2 class="card-title text-primary">{{blog.title}}</h2>
+    <h2 class="card-title text-success">{{blog.title}}</h2>
     <h6 class="fst-italic">by {{user.username}} on {{blog.date}}</h6>
     <p class="card-text text-dark">{{blog.content}}</p>
     <hr>
@@ -15,9 +15,9 @@
     <hr>
     {{/each}}
 
-    <a href="/postpage/{{blog.id}}" class="btn btn-primary" style="width: 150px">Read</a>
-    <a href="/editpost/{{blog.id}}" class="btn btn-primary" style="width: 150px">Edit</a>
-    <a href="/deletepost/{{blog.id}}" class="btn btn-primary" style="width: 150px">Delete</a>
+    <a href="/postpage/{{blog.id}}" class="btn btn-success" style="width: 150px">Read</a>
+    <a href="/editpost/{{blog.id}}" class="btn btn-success" style="width: 150px">Edit</a>
+    <a href="/deletepost/{{blog.id}}" class="btn btn-success" style="width: 150px">Delete</a>
     </div>
 </div>
 {{/each}}
