@@ -7,7 +7,7 @@
 
           <div class="card" style="width: 80%;">
             <div class="card-body">
-              <h2 class="card-title text-primary">{{blog.title}}</h2>
+              <h2 class="card-title text-success">{{blog.title}}</h2>
               <h6 class="fst-italic">by {{user.username}} on {{blog.date}}</h6>
               <p class="card-text text-dark">{{blog.content}}</p>
               <hr>
@@ -17,7 +17,7 @@
               <hr>
               {{/each}}
 
-              <a href="/postpage/{{blog.id}}" class="btn btn-primary">Read</a>
+              <a href="/postpage/{{blog.id}}" class="btn btn-success">Read</a>
             </div>
           </div>
           {{/each}}
