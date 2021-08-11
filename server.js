@@ -123,3 +123,8 @@ const PORT = process.env.PORT || 3003;
 sequelize.sync({ force: false }).then(() => {
   server.listen(PORT, () => console.log('Now listening'));
 });
+
+// Script for Chat Room was created as a result of tutorial by:
+// Brad Traversy at:
+//   https://www.youtube.com/watch?v=jD7FnbI76Hg&t=1339s
+//   https://github.com/bradtraversy/chatcord

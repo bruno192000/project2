@@ -29,25 +29,35 @@
   {{!-- Header --}}
   <header class="display-flex justify-space-between align-center p-2 text-light bg-success bg-gradient" style="--bs-bg-opacity: .75">
 
-    <h1 class="p-2" style="font-size: 48pt">Get bilingual! </h1>
-    <h3 class="p-2 fst-italic">A fun place to meet others, learn other languages, and practice!</h3>
-    <ul class="nav nav-pills justify-content-end">
-      {{#if logged_in}}
-      <li class="nav-item p-1" id="home-button" style="width: 150px">
-        <a class="nav-link active btn" style="background:#0f5132" id="home" aria-current="page" href="#" >Home</a>
-      </li>
-      
-      <li class="nav-item p-1"  id="dashboard-button" style="width: 150px">
-        <a class="nav-link active btn" style="background:#0f5132" id="dashboard" aria-current="page" href="#" >Dashboard</a>
-      </li>
+    <h1 class="p-2" style="font-size: 64pt"><i class="fas fa-comments"></i>&#160Get bilingual! </h1>
+    <div class="container-fluid mx-0"> {{!-- Page container using grid 12 --}}
 
-      <li class="nav-item p-1" style="width: 150px">
-        <a class="nav-link active btn" style="background:#0f5132" id="logout" aria-current="page" href="#" >Logout</a>
-      </li>
-      <script src="/js/navigation.js"></script>
-      {{/if}}
+      <div class="row justify-content-center">{{!-- Set columns in a row --}}
 
-    </ul>
+        <div class="col-6 mx-0">  {{!-- Left Column --}}
+          <h3 class="p-2 fst-italic">A fun place to meet others, learn other languages, and practice!</h3>
+      </div>
+
+      <div class="col-6 mx-0">  {{!-- Left Column --}}
+        <ul class="nav nav-pills justify-content-end">
+          {{#if logged_in}}
+          <li class="nav-item p-1" id="home-button" style="width: 150px">
+            <a class="nav-link active btn" style="background:#0f5132" id="home" aria-current="page" href="#" >Home</a>
+          </li>
+          
+          <li class="nav-item p-1"  id="dashboard-button" style="width: 150px">
+            <a class="nav-link active btn" style="background:#0f5132" id="dashboard" aria-current="page" href="#" >Dashboard</a>
+          </li>
+
+          <li class="nav-item p-1" style="width: 150px">
+            <a class="nav-link active btn" style="background:#0f5132" id="logout" aria-current="page" href="#" >Logout</a>
+          </li>
+          <script src="/js/navigation.js"></script>
+          {{/if}}
+        </ul>
+      </div>
+
+    </div>
   
   </header>
 
