@@ -29,27 +29,27 @@
   {{!-- Header --}}
   <header class="display-flex justify-space-between align-center p-2 text-light bg-success bg-gradient" style="--bs-bg-opacity: .75">
 
-    <h1 class=" p-2" style="font-size: 48pt"> Get bilingual! </h1>
+    <h1 class="p-2" style="font-size: 48pt">Get bilingual! </h1>
+    <h3 class="p-2 fst-italic">A fun place to meet others, learn other languages, and practice!</h3>
+    <ul class="nav nav-pills justify-content-end">
+      {{#if logged_in}}
+      <li class="nav-item p-1" id="home-button" style="width: 150px">
+        <a class="nav-link active btn" style="background:#0f5132" id="home" aria-current="page" href="#" >Home</a>
+      </li>
+      
+      <li class="nav-item p-1"  id="dashboard-button" style="width: 150px">
+        <a class="nav-link active btn" style="background:#0f5132" id="dashboard" aria-current="page" href="#" >Dashboard</a>
+      </li>
 
-  <ul class="nav nav-pills justify-content-end">
-    {{#if logged_in}}
-    <li class="nav-item p-1" id="home-button" style="width: 150px">
-      <a class="nav-link active btn" style="background:#0f5132" id="home" aria-current="page" href="#" >Home</a>
-    </li>
-    
-    <li class="nav-item p-1"  id="dashboard-button" style="width: 150px">
-      <a class="nav-link active btn" style="background:#0f5132" id="dashboard" aria-current="page" href="#" >Dashboard</a>
-    </li>
+      <li class="nav-item p-1" style="width: 150px">
+        <a class="nav-link active btn" style="background:#0f5132" id="logout" aria-current="page" href="#" >Logout</a>
+      </li>
+      <script src="/js/navigation.js"></script>
+      {{/if}}
 
-    <li class="nav-item p-1" style="width: 150px">
-      <a class="nav-link active btn" style="background:#0f5132" id="logout" aria-current="page" href="#" >Logout</a>
-    </li>
-    <script src="/js/navigation.js"></script>
-    {{/if}}
-
-  </ul>
-
-</header>
+    </ul>
+  
+  </header>
 
 {{!-- Body --}}
   <main>
