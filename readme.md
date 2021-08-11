@@ -36,7 +36,7 @@ Sing up or Log in to start using the app.
 You'll find a video chat with a translator for diferent languages.
 This page is lived in heroku. Try it <a href = " "> HERE!</a>
 <img src="./assets/Screenshot (16).png" alt="Failed to load screenshot">
-  
+ <img src="./assets/Screenshot (18).png" alt="Failed to load screenshot"> 
   ## Contribution
    This app is made to help you connect with other people with different languages. Forks and copy is completly free.
   
