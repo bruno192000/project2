@@ -279,5 +279,15 @@ router.get('/login', (req, res) => {
   res.render('login');
 }); // end of LOGIN
 
+// CHAT
+router.get('/chat', (req, res) => {
+
+  if (req.session.logged_in) {
+    res.redirect('/chat');
+    return;
+  }
+
+}); // end of CHAT
+
 
 module.exports = router;
