@@ -23,7 +23,7 @@ const app = express();
 const server = http.createServer(app);
 const io = socketio(server);
 
-const PORT = process.env.PORT || 3003;
+
 
 const hbs = exphbs.create({ helpers });
 
@@ -48,7 +48,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // Set static folder
-app.use(express.static(path.join(__dirname, '/public')));
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Routes
 app.use(routes);
@@ -117,8 +117,9 @@ io.on('connection', socket => {
   });
 });
 
+const PORT = process.env.PORT || 3003;
 
 // Initialize Server
 sequelize.sync({ force: false }).then(() => {
-  app.listen(PORT, () => console.log('Now listening'));
+  server.listen(PORT, () => console.log('Now listening'));
 });

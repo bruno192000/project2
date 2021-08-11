@@ -279,15 +279,46 @@ router.get('/login', (req, res) => {
   res.render('login');
 }); // end of LOGIN
 
-// CHAT
-router.get('/chat', (req, res) => {
+// // CHAT
+// router.get('/chat', (req, res) => {
 
-  if (req.session.logged_in) {
-    res.redirect('/chat');
-    return;
-  }
+//   if (req.session.logged_in) {
+//     res.redirect('/chat');
+//     return;
+//   }
 
-}); // end of CHAT
+// }); // end of CHAT
+
+// HOMEPAGE IF LOGGED IN
+router.get('/index.html', withAuth, async (req, res) => {
+
+  try {
+
+   const blogData = await Blog.findAll({
+     attributes: [
+       'id',
+       'date',
+       'title',
+       'content'
+     ],
+
+     include: [
+       {model: User, attributes: ['username']},
+       {model: Comment, attributes: ['date', 'comment_text', 'user_id']},
+     ]
+     });
+   const blogs = blogData.map((blog) => blog.get({ plain: true }));
+
+   res.render('homepage', {
+     blogs,
+     logged_in: req.session.logged_in,
+
+   });
+
+ } catch (err) {
+   res.status(503).json(err);
+ }
+}); // end HOMEPAGE
 
 
 module.exports = router;

@@ -1,7 +1,5 @@
 const homeFormHandler = (event) => {
     // Stop the browser from submitting the form
-    console.log("homeFormHandler");
-    console.log("Redirecting to homepage");
     window.location.replace("/");
 };
       
@@ -13,8 +11,6 @@ const homeFormHandler = (event) => {
 
 const dashboardFormHandler = (event) => {
     // Stop the browser from submitting the form
-    console.log("dashboardFormHandler");
-    console.log("Redirecting to dashboard");
     window.location.replace("/dashboard");
 };
         
@@ -22,4 +18,24 @@ const dashboardFormHandler = (event) => {
     document
     .querySelector('#dashboard-button')
     .addEventListener('click', dashboardFormHandler);
+
+
+    // Action taken when Logout button is selected
+// const logout = async () => {
+//     const response = await fetch('/api/users/logout', {
+//       method: 'POST',
+//       headers: { 'Content-Type': 'application/json' },
+//     });
+  
+//     // If successfully logged out, redirect user to the login page
+//     if (response.ok) {
+//       document.location.replace('/login');
+//     } else {
+//       alert(response.statusText);
+//     }
+//   };
+  
+//   // Listens for user to select Logout
+//     document.querySelector('#logout')
+//     .addEventListener('click', logout);
   
