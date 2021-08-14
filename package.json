@@ -1,12 +1,10 @@
 {
   "name": "project2",
   "version": "1.0.0",
-
   "description": "This time, our team has to show how we work together, and no better way to do it than creating an app that will help you connect with other people. Also learnig other languages and video chat with them.",
   "engines": {
     "node": "14.x"
   },
-
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -24,6 +22,7 @@
   },
   "homepage": "https://github.com/bruno192000/project2#readme",
   "dependencies": {
+    "axios": "^0.21.1",
     "bcrypt": "^5.0.1",
     "connect-session-sequelize": "^7.1.1",
     "dotenv": "^10.0.0",
@@ -33,7 +32,7 @@
     "moment": "^2.29.1",
     "mysql2": "^2.3.0",
     "sequelize": "^6.6.5",
-    "socket.io": "^4.1.3"
+    "socket.io": "^4.1.3",
+    "uuidv4": "^6.2.11"
   }
-
 }

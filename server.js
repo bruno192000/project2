@@ -8,6 +8,7 @@ const routes = require('./controllers');
 const helpers = require('./utils/helpers');
 const formatMessage = require('./utils/messages');
 const sequelize = require('./config/connection');
+
 const {
   userJoin,
   getCurrentUser,
