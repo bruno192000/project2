@@ -1,45 +1,45 @@
-const axios = require('axios').default;
-const { uuid } = require('uuidv4');
+const axios = require('axios');
+const { v4: uuidv4 } = require('uuid');
 
-var subscriptionKey = "c7ce45257dbd4132ba33765d773ba9b7";
+
+var subscriptionKey = "ee777f882f1740f9bcafb1d1eac61656";
 var endpoint = "https://api.cognitive.microsofttranslator.com";
-//var location = "global";
 
 // Add your location, also known as region. The default is global.
 // This is required if using a Cognitive Services resource.
+var location = "eastus";
 
+const getLanguage = document.getElementsByName('dropdown');
 
-const getTranslationPostFormHandler = (event) => {
-    console.log("translate!");
-    event.preventDefault();
+axios({
+    baseURL: endpoint,
+    url: '/translate',
+    method: 'post',
+    headers: {
+        'Ocp-Apim-Subscription-Key': subscriptionKey,
+        'Ocp-Apim-Subscription-Region': location,
+        'Content-type': 'application/json',
+        'X-ClientTraceId': uuidv4().toString()
+    },
+    params: {
+        'api-version': '3.0',
+        // 'from': 'en',
+        'to': getLanguage
+    },
+    data: [{
+        'text': (`${original}`)
+    }],
+    responseType: 'json'
+}).then(function(response){
+    console.log(JSON.stringify(response.data, null, 4));
+    showTranslation()});
 
-    axios({
-        baseURL: endpoint,
-        url: '/translate',
-        method: 'post',
-        headers: {
-            'Ocp-Apim-Subscription-Key': subscriptionKey,
-            'Ocp-Apim-Subscription-Region': location,
-            'Content-type': 'application/json',
-            'X-ClientTraceId': uuid().toString()
-        },
-        params: {
-            'api-version': '3.0',
-            'from': 'en',
-            'to': ['de', 'it']
-        },
-        data: [{
-            'text': 'Hello World!'
-        }],
-        responseType: 'json'
-
-    }).then(function(response){
-        console.log(JSON.stringify(response.data, null, 4));
-    })
-
+const showTranslation = () => {
+   const translatorContainer = document.getElementById('translated').innerHTML;
+   var render = handlebars.compile(translatorContainer);
+   document.getElementById('text') = render(data);
 }
 
-// Listens for user to select Submit
 document
 .querySelector('#translate')
-.addEventListener('click', getTranslationPostFormHandler);
+.addEventListener('click', axios);

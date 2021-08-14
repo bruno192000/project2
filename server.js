@@ -8,6 +8,8 @@ const routes = require('./controllers');
 const helpers = require('./utils/helpers');
 const formatMessage = require('./utils/messages');
 const sequelize = require('./config/connection');
+const axios = require('axios');
+const { v4: uuidv4 } = require('uuid');
 
 const {
   userJoin,
@@ -20,7 +22,7 @@ const {
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
 const app = express();
-// Needed by socketio
+// Needed by socket.io
 const server = http.createServer(app);
 const io = socketio(server);
 

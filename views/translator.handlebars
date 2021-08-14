@@ -1,21 +1,22 @@
 <div class="card" style="width: 80%;">
   <div class="card-body">
-    <h2 class="card-title text-primary">Text Translator</h2>
+    <h2 class="card-title text-primary join-header">Text Translator</h2>
     <p class="card-text text-dark"></p>
     <hr>
-    <h5 class="text-primary" id="originalContent">Original Language</h5>
+    <h5 class="text-primary join-main" id="originalContent">Original Language</h5>
       <div class="form-floating mb-3">
         <input type="text" class="form-control" id="original" placeholder="Enter Text Here">{{data}}</input>
-            <select name="dropdown" id="language">
-          <option value="fr">French</option>
-          <option value="es">Spanish</option>
-          <option value="de">German</option>
-          <option value="pt">Portugese</option>
-          <option value="it">Italian</option>
+      <h5 class="text-primary" id="translatedContent">Target Language</h5>
+        <select name="dropdown" id="language">
+            <option value="fr">French</option>
+            <option value="es">Spanish</option>
+            <option value="de">German</option>
+            <option value="pt">Portugese</option>
+            <option value="it">Italian</option>
         </select>
         <label for="new_comment"></label>
       </div>
-    <h5 class="text-primary" id="translatedContent">Target Language</h5>
+    
       <div class="form-floating mb-3">
         <input type="comment" class="form-control" id="translated" placeholder="Translated Text">{{translation}}
         <label for="new_comment"></label>
