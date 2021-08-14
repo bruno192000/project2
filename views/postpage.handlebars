@@ -10,7 +10,7 @@
 
 
       {{#each post.comments}}
-      <h5 class="fst-italic" style="color: #198754">Comment:</h6>
+       <h6 class="fst-italic">Comment by {{this.username}} on {{this.date}}:</h6>
       {{this.comment_text}}
       <hr>
       {{/each}}

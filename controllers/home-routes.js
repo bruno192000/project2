@@ -23,6 +23,17 @@ router.get('/', withAuth, async (req, res) => {
       ]
       });
     const blogs = blogData.map((blog) => blog.get({ plain: true }));
+    for (let i=0; i<blogs.length; i++){
+      const commentsArray = (blogs[i].comments);
+      for (let j=0; j<commentsArray.length; j++){
+        const comment = commentsArray[j]
+        const userData = await User.findOne({
+          where: {id:comment.user_id}
+        })
+        const username = userData.get({ plain: true }).username
+        blogs[i].comments[j].username=username
+      }
+    }
 
     res.render('homepage', {
       blogs,
@@ -48,7 +59,17 @@ router.get('/postpage/:id', withAuth, async (req, res) => {
        ],
     });
 
-    const post = postData.get({ plain: true });
+    const post = postData.get({ plain: true });{
+      const commentsArray = (post.comments);
+      for (let j=0; j<commentsArray.length; j++){
+        const comment = commentsArray[j]
+        const userData = await User.findOne({
+          where: {id:comment.user_id}
+        })
+        const username = userData.get({ plain: true }).username
+        post.comments[j].username=username
+      }
+    }
 
     res.render('postpage', {
       post,
@@ -129,7 +150,17 @@ router.get('/dashboard', withAuth, async (req, res) => {
   });
 
    const blogs = blogData.map((blog) => blog.get({ plain: true }));
-
+   for (let i=0; i<blogs.length; i++){
+    const commentsArray = (blogs[i].comments);
+    for (let j=0; j<commentsArray.length; j++){
+      const comment = commentsArray[j]
+      const userData = await User.findOne({
+        where: {id:comment.user_id}
+      })
+      const username = userData.get({ plain: true }).username
+      blogs[i].comments[j].username=username
+    }
+  }
    res.render('dashboard', {
      blogs,
      logged_in: req.session.logged_in,

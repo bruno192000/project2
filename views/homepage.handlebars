@@ -15,7 +15,7 @@
               <p class="card-text text-dark">{{blog.content}}</p>
               <hr>
               {{#each blog.comments}}
-              <h6 class="fst-italic" style="color: #198754">Comment:</h6>
+              <h6 class="fst-italic">Comment by {{this.username}} on {{this.date}}:</h6>
               {{this.comment_text}}
               <hr>
               {{/each}}
@@ -70,24 +70,49 @@
 
           <div class="join-container mt-0"> {{!-- Translation Container --}}
 
-            <h1 style="color:black">Need a translation?</h1>
+            <h1 style="color:black">Get A Translation!</h1>
 
-            <div class="card" style="width: 100%;"> {{!-- Translation Container Card (not necessarily a card) --}}
-              <div class="card-body" style="background: #5FA98C">
-                
+            <header class="join-header">
+            <h1 style="color:white">What do you want to translate?</h1>
+            </header>
+
+            <main class="join-main">
+              <form action="translate.html">
+              <div class="form-control">
+                <label for="textToTranslate">Enter Text to Translate</label>
+                <input
+                  type="text"
+                  name="username1"
+                  id="username1"
+                  placeholder="Text"
+                  required
+                />
               </div>
-                   
-            </div> {{!-- End of translation card --}}
+
+              <div class="form-control">
+                <label for="textToTranslate"></label>
+                <input
+                  type="text"
+                  name="translatedText"
+                  id="translatedText"
+                  placeholder="Your Translation"
+                  required
+                />
+              </div>
+
+              <button type="submit" id="translate" class="active btn" style="background:#0f5132">Translate!</button>
+</form>
+            </main>
+
+{{!--   <script src="/js/translator.js"></script> --}}
 
           </div> {{!-- End of translation container--}}
 
 
           <div class="col">
-              <h1 class="text-center">Chat with friends on Zoom               <span class="icon" style="width: 20px;">
+              <h1 class="text-center">Chat with friends on Zoom<span class="icon" style="width: 20px;">
               <a href="https://zoom.us/" target="_blank" rel="noopener noreferrer"><img src="https://www.eweek.com/wp-content/uploads/2021/01/Zoom.logo_.jpg" width="100px" height="80px"></a>
               </span></h1>
-
-
 
           </div>
 
@@ -95,9 +120,9 @@
    
   </div> {{!-- End of page container --}}
 
+
+
 {{!-- Script for Chat Room was created as a result of tutorial by: --}}
 {{!-- Brad Traversy at: --}}
 {{!--   https://www.youtube.com/watch?v=jD7FnbI76Hg&t=1339s --}}
 {{!--   https://github.com/bradtraversy/chatcord --}}
-
-
