@@ -34,7 +34,7 @@ This time, our team has to show how we work together, and no better way to do it
   ## Usage
 Sing up or Log in to start using the app.
 You'll find a video chat with a translator for diferent languages.
-This page is lived in heroku. Try it <a href = " "> HERE!</a>
+This page is lived in heroku. Try it <a href = "https://dry-river-69092.herokuapp.com/login"> HERE!</a>
 <img src="./assets/Screenshot (16).png" alt="Failed to load screenshot">
  <img src="./assets/Screenshot (18).png" alt="Failed to load screenshot"> 
   ## Contribution
