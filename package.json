@@ -12,7 +12,7 @@
     "seed": "node seeds/index.js",
     "dev": "nodemon server.js"
   },
-  },
+  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bruno192000/project2.git"
