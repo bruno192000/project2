@@ -1,5 +1,6 @@
 const axios = require('axios').default;
 const { v4: uuidv4 } = require('uuid');
+const curl = require('curl-request');
 
 
 var subscriptionKey = "ee777f882f1740f9bcafb1d1eac61656";
@@ -8,8 +9,6 @@ var endpoint = "https://api.cognitive.microsofttranslator.com";
 // Add your location, also known as region. The default is global.
 // This is required if using a Cognitive Services resource.
 var location = "eastus";
-
-const getLanguage = document.getElementsByName('dropdown');
 
 axios({
     baseURL: endpoint,
@@ -24,7 +23,7 @@ axios({
     params: {
         'api-version': '3.0',
         // 'from': 'en',
-        'to': getLanguage
+        'to': (`${dropdown}`)
     },
     data: [{
         'text': (`${data}`)
