@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { response } = require('express');
+//const { response } = require('express');
 const { User, Blog, Comment } = require('../models');
 const withAuth = require('../utils/auth');
 
@@ -25,6 +25,7 @@ router.get('/', withAuth, async (req, res) => {
     const blogs = blogData.map((blog) => blog.get({ plain: true }));
     for (let i=0; i<blogs.length; i++){
       const commentsArray = (blogs[i].comments);
+      
       for (let j=0; j<commentsArray.length; j++){
         const comment = commentsArray[j]
         const userData = await User.findOne({
@@ -100,7 +101,6 @@ router.get('/newcomment/:id', withAuth, async (req, res) => {
     res.render('newcomment', {
       post,
       logged_in: req.session.logged_in
-
     });
 
   } catch (err) {
@@ -152,6 +152,7 @@ router.get('/dashboard', withAuth, async (req, res) => {
    const blogs = blogData.map((blog) => blog.get({ plain: true }));
    for (let i=0; i<blogs.length; i++){
     const commentsArray = (blogs[i].comments);
+
     for (let j=0; j<commentsArray.length; j++){
       const comment = commentsArray[j]
       const userData = await User.findOne({
@@ -310,15 +311,6 @@ router.get('/login', (req, res) => {
   res.render('login');
 }); // end of LOGIN
 
-// // CHAT
-// router.get('/chat', (req, res) => {
-
-//   if (req.session.logged_in) {
-//     res.redirect('/chat');
-//     return;
-//   }
-
-// }); // end of CHAT
 
 // HOMEPAGE IF LOGGED IN
 router.get('/index.html', withAuth, async (req, res) => {

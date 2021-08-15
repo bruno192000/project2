@@ -8,8 +8,6 @@ const routes = require('./controllers');
 const helpers = require('./utils/helpers');
 const formatMessage = require('./utils/messages');
 const sequelize = require('./config/connection');
-const axios = require('axios');
-const { v4: uuidv4 } = require('uuid');
 
 const {
   userJoin,
@@ -25,8 +23,6 @@ const app = express();
 // Needed by socket.io
 const server = http.createServer(app);
 const io = socketio(server);
-
-
 
 const hbs = exphbs.create({ helpers });
 
@@ -51,11 +47,10 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // Set static folder
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, '/public')));
 
 // Routes
 app.use(routes);
-
 
 // Code used for chatroom
 // creates variable for chat bot

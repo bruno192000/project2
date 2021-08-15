@@ -27,6 +27,7 @@
 
       </div> {{!-- End of left column --}}
 
+
       <div class="col-6"> {{!-- Right Column --}}
 
           <div class="join-container mt-0"> {{!-- Chat Container --}}
@@ -64,9 +65,10 @@
               <button type="submit" id="joinchat" class="active btn" style="background:#0f5132">Join Chat</button>
               </form>
 
-            </main> {{!-- End of chat container body --}}
+            </main> 
 
           </div> {{!-- End of chat container --}}
+
 
           <div class="join-container mt-0"> {{!-- Translation Container --}}
             <h1 style="color:black">Get A Translation!</h1>
@@ -76,46 +78,44 @@
             </header>
 
             <main class="join-main">
-
               <form>
                 <div class="form-control">
-                  <input type="text" id="original" placeholder="Enter Text Here"></input>
-                  <h3 class="join-header" style="color: white" id="translatedContent">Choose Target Language</h3>
+                  <input type="text" id="textToTranslate" placeholder="Enter Text Here"></input>
+                  <label for="textToTranslate"></label> {{!-- textToTranslate --}}
 
-                <select name="dropdown" id="language">
+                <h3 class="join-header" style="color: white">Translate to:</h3>
+                <select name="dropdown" id="languageTo">  {{!-- languageTo --}}
                   <option value="fr">French</option>
                   <option value="es">Spanish</option>
                   <option value="de">German</option>
                   <option value="pt">Portugese</option>
                   <option value="it">Italian</option>
-                </select>
+                </select> 
                 <hr>
-                         
+                        
+                  <input type="text" id="translatedTextHolder" placeholder="Translated Text" value={{transText}}></input>
+                  <label for="new_comment"></label>  {{!-- TranslatedTextHolder --}}
 
-                  <input type="text" id="translated" placeholder="Translated Text">{{translation}}</input>
-                  <label for="new_comment"></label>
-
-                </div>
+                </div> 
                   
-                <button class="btn btn-success" id="comment-card">Submit</a>
+                <button class="btn btn-success" id="translate">Submit</a>  {{!-- translate --}}
       
               </form>
             </main> 
-
-            <script src="/js/translator.js"></script>
-
+            
           </div> {{!-- End of translation container--}}
 
           <div class="col">
               <h1 class="text-center">Chat with friends on Zoom<span class="icon" style="width: 20px;">
               <a href="https://zoom.us/" target="_blank" rel="noopener noreferrer"><img src="https://www.eweek.com/wp-content/uploads/2021/01/Zoom.logo_.jpg" width="100px" height="80px"></a>
               </span></h1>
-          </div>
-
+          </div>  {{!-- End of Zoom --}}
 
       </div> {{!-- End of right column --}}
    
   </div> {{!-- End of page container --}}
+
+  <script src="/js/translator.js"></script>
 
 
 
