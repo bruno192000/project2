@@ -31,9 +31,9 @@ const editPostFormHandler = async (event) => {
         alert('Failed to create post');
     }
 
-    
 };
   
+
   // Listens for user to select Submit
   document
     .querySelector('#edit_post_card')

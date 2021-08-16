@@ -16,12 +16,10 @@ const getTranslationPostFormHandler = async (event) => {
 
     //console.log(translatedText);
     console.log("hello");
-
-
+   
+  
+    //document.getElementById('#translatedText').innerHTML = translatedText;
 }
-
-
-
 
 
 document

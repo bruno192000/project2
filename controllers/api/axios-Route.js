@@ -1,10 +1,8 @@
 const axios = require("axios").default;
 const router = require("express").Router();
 
-
 var subscriptionKey = "c7ce45257dbd4132ba33765d773ba9b7";
 var endpoint = "https://api.cognitive.microsofttranslator.com";
-
 
 router.post("/axiosR", async (req, res) => {
     const language = req.body.language
@@ -33,11 +31,19 @@ router.post("/axiosR", async (req, res) => {
     responseType: "json",
 
   }).then(function await (response) {
-
-    const translatedText = JSON.stringify(response.data[0].translations[0].text)
+    //console.log(response);
+    const translatedText = (response.data[0].translations[0].text)
+    console.log("=========================")
+    console.log(`Text translated to ${language}:`)
+    console.log(translatorContainer);
+    console.log("");
+    console.log("Translation below:");
     console.log(translatedText);
-    
-  //document.getElementById('#translatedText').innerHTML = translatedText;
+    console.log("=========================")
+  
+        res.render('homepage', {
+        translatedText
+    });
 
   }).catch (function (err){
     console.log("error Message", err);
