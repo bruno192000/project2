@@ -1,6 +1,6 @@
 # Get Bilingual
   ## Description
-This time, our team has to show how we work together, and no better way to do it than creating an app that will help you connect with other people. Also learnig other languages and video chat with them.
+This time, our team has to show how we work together, and no better way to do it than creating an app that will help you connect with other people while learning another language through chat.
 
 
   [![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
@@ -18,7 +18,7 @@ This time, our team has to show how we work together, and no better way to do it
 
 
   ## Installation
-  Need to instal the following: 
+  Need to install the following: 
  <ol>npm init --y</ol>
  <ol>npm i bcrypt </ol>
  <ol>npm i connect-session-sequelize</ol>
@@ -29,16 +29,17 @@ This time, our team has to show how we work together, and no better way to do it
  <ol>npm i mysql2</ol>
  <ol>npm i sequelize</ol>
  <ol>npm i socket.io</ol>
+ <ol>npm i axios</ol>
 
   
   ## Usage
-Sing up or Log in to start using the app.
-You'll find a video chat with a translator for diferent languages.
-This page is lived in heroku. Try it <a href = "https://dry-river-69092.herokuapp.com/login"> HERE!</a>
+Sign up or Log in to start using the app.
+You'll find a chat with a translator for different languages.
+This page is deployed to Heroku. Try it <a href = "https://dry-river-69092.herokuapp.com/login"> HERE!</a>
 <img src="./assets/Screenshot (16).png" alt="Failed to load screenshot">
  <img src="./assets/Screenshot (18).png" alt="Failed to load screenshot"> 
   ## Contribution
-   This app is made to help you connect with other people with different languages. Forks and copy is completly free.
+   This app is made to help you connect with other people with different languages. Forks and copy is completely free.
   
   ## Tests
   No current testing procedures
