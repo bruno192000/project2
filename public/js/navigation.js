@@ -13,7 +13,8 @@ const dashboardFormHandler = (event) => {
     // Stop the browser from submitting the form
     window.location.replace("/dashboard");
 };
-        
+    
+
 // Listens for Delete button to be selected
 document
 .querySelector('#dashboard-button')

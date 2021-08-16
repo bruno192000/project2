@@ -56,11 +56,13 @@ const signupFormHandler = async (event) => {
   }
 };
 
+
 // Listens for returning user to select Login
 document
   .querySelector('.login-form')
   .addEventListener('submit', loginFormHandler);
 
+  
 // Listens for new user to select Signup
 document
   .querySelector('.signup-form')

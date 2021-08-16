@@ -32,6 +32,7 @@ const commentFormHandler = async (event) => {
     
 };
   
+
   // Listens for returning user to select Submit
   document
     .querySelector('#comment-card')

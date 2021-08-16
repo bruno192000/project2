@@ -22,16 +22,15 @@ const newPostFormHandler = async (event) => {
         
         alert("Your post has been created");
         window.location.replace("/");
-
  
     } else {
         console.log("no post");
         alert('Failed to create post');
     }
-
     
 };
   
+
   // Listens for user to select Submit
   document
     .querySelector('#new_post_card')
